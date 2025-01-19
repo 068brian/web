@@ -3,6 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize input data to prevent injection attacks
     $name = htmlspecialchars($_POST["name"]);
     $email = htmlspecialchars($_POST["email"]);
+    $car = htmlspecialchars($_POST["car"]);
     $message = htmlspecialchars($_POST["message"]);
 
     // Email configuration
